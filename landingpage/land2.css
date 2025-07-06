@@ -4,9 +4,13 @@
     padding: 0;
     margin: 0;
 }
+body{
+  background-color: #777;
+}
 .heading{
     font-size: 38px;
     font-weight: 500;
+    padding-left: 50px;
     color: aliceblue;
 }
 .pandas{
@@ -27,9 +31,9 @@
     /* From Uiverse.io by gharsh11032000 */ 
 .card {
   position: relative;
-  width: 350px;
+  width: 340px;
   height: 200px;
-  background-color: #f2f2f2;
+  background-color: rgb(192, 145, 111);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -90,6 +94,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    
 }
 /* navbar */
 /* Top-level navbar only */
@@ -129,18 +135,20 @@
 }
 /* food image size */
 img{
-   width: 80%;
+   width:80%;
    height: 80%;
    object-fit: cover;
+   border-radius: 13px;
 }
 .king{
    display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column; 
+    padding-left: 30px;
 }
 .king,img{
-   width: 80%;
+   width: 85%;
    height: 80%;
    object-fit: cover;}
   /* Navbar dropdown fix */
@@ -189,4 +197,7 @@ img{
 .dropdown-content {
   pointer-events: auto;
 }
-
+h3{
+  padding-left: 50px;
+  margin-top: 10px;
+}
