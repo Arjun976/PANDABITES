@@ -147,11 +147,13 @@ img{
     flex-direction: column; 
     padding-left: 30px;
 }
-.king img{
-   width: 85%;
-   height: 80%;
-   object-fit: cover;
-  }
+.king img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px /* optional: rounded top edges */
+}
+
   /* Navbar dropdown fix */
 /* Container for dropdown */
 .dropdown {
