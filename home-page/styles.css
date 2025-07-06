@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --light-color:#777;
+    --black:#333333;
+    --text-shadow:.4rem .4rem 0 rgba(0,  0, 0, .2);
+}
+
+
+*{
+    font-family: "poppins",sans-serif ;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.4%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.header{
+    padding: 2rem 9%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 5rem rgba(237, 98, 12, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(217, 97, 53);
+    border-bottom-left-radius:3px ;
+}
+
+.header .logo img{
+    width: 7rem;
+    height: 7rem;
+    
+}
+
+.header .logo{
+    font-size: 4rem;
+    
+}
+
+.header .logo i{
+    position: absolute;
+    margin-right: 3rem;
+    margin-top: 1.5rem;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .navbar .active{
+    transform: scale(1);
+    opacity: 1;
+    transition: -2 ease-out;
+}
+
+.header .navbar a{
+    font-style: oblique;
+    font-weight: 600;
+    font-size: 1.7rem;
+    /* color: var(--light-color ); */
+    margin-left:2rem;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    border-radius: .5rem;
+    color: #190094;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 10rem;
+    background-color:rgb(247, 247, 238);
+}
+
+.home .image{
+    flex: 1 1 45rem;
+}
+
+.home .content{
+    flex: 1 1 45rem;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color:var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
