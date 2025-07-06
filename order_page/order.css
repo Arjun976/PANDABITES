@@ -1,0 +1,82 @@
+/* Reset & base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: url('./image/bgi.webp') no-repeat center center fixed;
+  background-size: cover;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main card */
+.sign-up {
+  background-color: rgba(255, 255, 255, 0.8); /* semi-transparent */
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.heading h1 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Burger image */
+.burger-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Rating */
+.rating {
+  font-size: 20px;
+  color: #f39c12;
+  margin-bottom: 1.5rem;
+}
+
+/* Buy Button */
+.buy-button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: rgb(205, 143, 27);
+}
+.price {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
