@@ -1,7 +1,33 @@
-/* From Uiverse.io by gharsh11032000 */ 
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.heading{
+    font-size: 38px;
+    font-weight: 500;
+    color: aliceblue;
+}
+.pandas{
+   width: 90px;
+   height: 90px;
+   object-fit: cover;
+}
+.top{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: chocolate;
+}
+    /* From Uiverse.io by gharsh11032000 */ 
 .card {
   position: relative;
-  width: 300px;
+  width: 350px;
   height: 200px;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -65,3 +91,102 @@
     justify-content: center;
     align-items: center;
 }
+/* navbar */
+/* Top-level navbar only */
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.rowing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+/* food image size */
+img{
+   width: 80%;
+   height: 80%;
+   object-fit: cover;
+}
+.king{
+   display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column; 
+}
+.king,img{
+   width: 80%;
+   height: 80%;
+   object-fit: cover;}
+  /* Navbar dropdown fix */
+/* Container for dropdown */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown list is hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%; /* Just below the menu button */
+  left: 0;
+  background-color: chocolate;
+  border-radius: 6px;
+  padding: 10px 0;
+  min-width: 160px;
+  z-index: 999;
+}
+
+/* Show dropdown when hovering the li (whole area) */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Links inside dropdown */
+.dropdown-content li a {
+  display: block;
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.dropdown-content li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* .dropdown-content {
+  display: none !important;
+} */
+.dropdown:hover .dropdown-content {
+  display: block !important;
+}
+.dropdown-content {
+  pointer-events: auto;
+}
+
