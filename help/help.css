@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fffaf3;
+    color: #333;
+    line-height: 1.6;
+}
+
+.help-header {
+    background-color: #d7610c;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.help-header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.help-header p {
+    font-size: 1.6rem;
+}
+
+.faq-section {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.faq-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq-card {
+    background-color: #fff0d9;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-4px);
+}
+
+.faq-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #d7610c;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.faq-card p {
+    font-size: 1.4rem;
+    color: #444;
+}
+
+.help-footer {
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    border-top: 5px solid #d7610c;
+}
+
+.help-footer a {
+    color: #ffc285;
+    text-decoration: underline;
+}
