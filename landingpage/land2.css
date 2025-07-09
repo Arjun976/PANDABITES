@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
   background-color:#FFEEA9;
@@ -20,7 +21,7 @@ body{
 }
 .top{
     display: flex;
-    height: 250px;
+    height: 150px;
     width: 100%;
     padding-top: 40px;
     flex-direction: column;
@@ -272,3 +273,27 @@ h3{
   background-color: rgb(255, 230, 230);
   transition-duration: 0.3s;
 }
+
+.side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: chocolate; /* Matches the .top section background */
+    width: 100%;
+    padding: 10px 0; /* Add some padding for better appearance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for visibility */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+    font-size: x-large;
+}
+    
