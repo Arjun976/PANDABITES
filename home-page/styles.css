@@ -114,6 +114,10 @@ html{
 
 /* offer page begins */
 
+.offer{
+  background: linear-gradient(to right,orange,white);
+}
+
  .side{
   display: flex;
   justify-content: center;
@@ -125,6 +129,8 @@ html{
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
+      background:radial-gradient(white,orange);
+  
     }
     h2 {
       text-align: center;
