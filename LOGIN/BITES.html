@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./BITES.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | PandaBites</title>
+  <link rel="icon" href="../images/hii.png" />
+  <link rel="stylesheet" href="BITES.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <div class="top">
-        <div class="heading">
-            <h1>LOGIN</h1>
-
-        </div>
-        <div class="image">
-            <img src="./images/give me the image in.png" alt="">
-        </div>
-
+  <div class="navbar">
+    <div class="navbar-left">
+      <img src="../images/panda.png" alt="Logo" class="logo"/>
+      <h1 class="title">PANDABITES</h1>
     </div>
-    <div class="content" style="padding-top: 100px;">
-    <!-- From Uiverse.io by mrhyddenn --> 
-<div class="form__group field" >
-    <input type="input" class="form__field" placeholder="&nbsp;&nbsp;PHONE NUMBER" required="">
-    <label for="name" class="form__label">&nbsp;&nbsp;&nbsp;PHONE NUMBER</label>
-</div>
-<div style="padding-right: 10px;">
-<!-- From Uiverse.io by mrhyddenn --> 
-<button>
-    <span style="padding-left: 18px;">SIGNIN</span>
-</button>
-</div>
-</div>
+    <div class="navbar-right">
+      <button class="btn">
+        <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+          <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+        </svg>
+        <span class="text">SIGNUP</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="login-container">
+    <form class="login-box">
+      <h2>Login</h2>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required />
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
 </body>
 </html>

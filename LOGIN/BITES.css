@@ -1,154 +1,174 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.heading{
-    font-size: 38px;
-    font-weight: 500; 
-    color: aliceblue;
-}
-img{
-   width: 90px;
-   height: 90px;
-   object-fit: cover;
-}
-.top{
-    display: flex;
-    height: 250px;
-    width: 100%;
-    padding-top: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    background-color: chocolate;
-}
-/* From Uiverse.io by mrhyddenn */ 
-.form__group {
-  position: relative;
-  padding: 20px 0 0;
-  width: 100%;
-  max-width: 180px;
-
+body {
+  background: url('../Sign-up/img/hygienic-waiter-hands-pick-restaurant-food-generate-ai-photo.jpg') no-repeat center center/cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
 }
 
-.form__field {
-  font-family: inherit;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #9b9b9b;
-  outline: 0;
-  font-size: 17px;
-  color: #fff;
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.2s;
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: chocolate;
+  color: white;
+  height: 140px;
 }
 
-.form__field::placeholder {
-  color: transparent;
-}
-
-.form__field:placeholder-shown ~ .form__label {
-  font-size: 17px;
-  cursor: text;
-  top: 20px;
-}
-
-.form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: #9b9b9b;
-  pointer-events: none;
-}
-
-.form__field:focus {
-  padding-bottom: 6px;
-  font-weight: 700;
-  border-width: 3px;
-  border-image: linear-gradient(to right, rgb(127, 58, 9), chocolate);
-  border-image-slice: 1;
-}
-
-.form__field:focus ~ .form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: chocolate;
-  font-weight: 700;
-}
-
-/* reset input */
-.form__field:required, .form__field:invalid {
-  box-shadow: none;
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-right: 130px;
-}
-/* From Uiverse.io by mrhyddenn */ 
-button {
-  background: transparent;
-  position: relative;
-  padding: 5px 15px;
+.navbar-left {
   display: flex;
   align-items: center;
-  height: 60px;
-  width: 150px;
-  font-size: 17px;
-  font-weight: 600;
-  text-decoration: none;
+  gap: 20px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100px; /* Matches inline style from your original HTML */
+}
+
+.title {
+  font-size: 50px; /* Matches inline style from your original HTML */
+  font-weight: bold;
+}
+
+/* Button styling for the Generate button */
+.btn {
+  border: none;
+  width: 8em;
+  height: 3em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1C1A1C;
   cursor: pointer;
-  border: 1px solid chocolate;
-  border-radius: 25px;
-  outline: none;
-  overflow: hidden;
-  color: chocolate;
-  transition: color 0.3s 0.1s ease-out;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #AAAAAA;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 300;
+  color: #AAAAAA;
+  font-size: small;
+}
+
+.btn:hover {
+  background: linear-gradient(0deg,#A47CF3,#683FEA);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+  0px 0px 180px 0px #9917FF;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+} 
+
+/* Login box styling */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.login-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px 40px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   text-align: center;
 }
 
-button span {
-  margin: 10px;
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
 }
 
-button::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  content: '';
-  border-radius: 50%;
+.login-box label {
   display: block;
-  width: 20em;
-  height: 20em;
-  left: -5em;
-  text-align: center;
-  transition: box-shadow 0.5s ease-out;
-  z-index: -1;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #444;
 }
 
-button:hover {
-  color: #fff;
-  border: 1px solid chocolate;
+.login-box input {
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
 }
 
-button:hover::before {
-  box-shadow: inset 0 0 0 10em chocolate;
+.login-box button {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
- input{
-    padding-left: 20px;
- }
+
+.login-box button:hover {
+  background-color: #e69500;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-right {
+    margin-top: 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .logo {
+    height: 60px; /* Adjusted for smaller screens */
+  }
+
+  .title {
+    font-size: 36px; /* Adjusted for smaller screens */
+  }
+}
