@@ -18,6 +18,7 @@ body{
    width: 90px;
    height: 90px;
    object-fit: cover;
+   border: none !important;
 }
 .top{
     display: flex;
@@ -103,10 +104,12 @@ body{
 .navbar > ul {
     list-style: none;
     display: flex;
+    align-items: center; /* ADD THIS LINE */
     gap: 30px;
     padding: 0;
     margin-top: 20px;
 }
+
 
 
 
@@ -211,11 +214,10 @@ h3{
 
 /* From Uiverse.io by Shaidend */ 
 .InputContainer {
-  margin-top: 5rem;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   overflow: hidden;
@@ -225,14 +227,15 @@ h3{
 }
 
 .input {
-  width: 270px;
-  height: 100%;
-  border: none;
-  outline: none;
-  font-size: 2rem;
-  font-weight: 400;
-  caret-color: rgb(255, 81, 0);
+    width: 420px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;  /* was 2rem */
+    font-weight: 400;
+    caret-color: rgb(255, 81, 0);
 }
+
 
 .labelforsearch {
   cursor: text;
@@ -308,4 +311,8 @@ h3{
 .king img.drink + h3 {
     padding-left: 30px; /* Adjusts the left padding to move text to the left */
     margin-left: -20px; /* Optional: negative margin to shift further left */
+}
+.side{
+  padding-bottom: 100px;
+  /* margin-bottom: 50px; */
 }
