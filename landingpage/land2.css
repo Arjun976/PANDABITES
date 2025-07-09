@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-  background-color:#FFEEA9;
+  background-color:#F5E1C0;
 }
 .heading{
     font-size: 38px;
@@ -35,7 +35,7 @@ body{
   position: relative;
   width: 340px;
   height: 200px;
-  background-color: rgb(192, 145, 111);
+  background-color: #FDD835;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -145,19 +145,24 @@ img{
    border: 2px solid #ff0000 !important;
    border-radius: 13px;
 }
-.king{
-   display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column; 
-    padding-left: 30px;
+.king {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  text-align: center;
 }
+
 .king img {
-  width: 100%;
-  height: 140px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
   object-fit: cover;
-  border-radius: 10px /* optional: rounded top edges */
+  border: 3px solid #ff0000; /* optional: red border */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* optional: subtle shadow */
 }
+
 
   /* Navbar dropdown fix */
 /* Container for dropdown */
@@ -300,15 +305,15 @@ h3{
     padding-left: 50px;
     font-size: x-large;
 }
-    img.drink {
+    /* img.drink {
     width: 90% !important;
     height: 160px !important;
     border: 2px solid #ff0000 !important;
     border-radius: 15px !important;
     object-fit: cover !important;
     filter: brightness(1.2) !important;
-}
-.king img.drink + h3 {
+} */
+.king img+ h3 {
     padding-left: 30px; /* Adjusts the left padding to move text to the left */
     margin-left: -20px; /* Optional: negative margin to shift further left */
 }
