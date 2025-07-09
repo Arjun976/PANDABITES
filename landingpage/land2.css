@@ -139,6 +139,7 @@ img{
    width:80%;
    height: 80%;
    object-fit: cover;
+   border: 2px solid #ff0000 !important;
    border-radius: 13px;
 }
 .king{
@@ -296,4 +297,15 @@ h3{
     padding-left: 50px;
     font-size: x-large;
 }
-    
+    img.drink {
+    width: 90% !important;
+    height: 160px !important;
+    border: 2px solid #ff0000 !important;
+    border-radius: 15px !important;
+    object-fit: cover !important;
+    filter: brightness(1.2) !important;
+}
+.king img.drink + h3 {
+    padding-left: 30px; /* Adjusts the left padding to move text to the left */
+    margin-left: -20px; /* Optional: negative margin to shift further left */
+}
