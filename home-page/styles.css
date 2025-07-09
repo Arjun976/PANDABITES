@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root{
+    --dark:#000000;
     --light-color:#312929;
     --black:#333333;
     --text-shadow:.4rem .4rem 0 rgba(0,  0, 0, .2);
+    --border:.2rem solid var(--dark);
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
 }
 
 
@@ -85,7 +88,7 @@ html{
 #menu-btn{
     font-size: 2.5rem;
     border-radius: .5rem;
-    color: #190094;
+    color: black;
 }
 
 .home{
@@ -192,7 +195,7 @@ html{
     gap: 20px;
     flex-direction: column;
     overflow: none;
-    background-color:#FFEEA9;
+    background-color:#f4f2bd;
 }
 
 .row{
@@ -202,11 +205,11 @@ html{
     gap: 20px;   
 }
 
-#starters{
+.starters{
     margin-top: 6rem;
 }
 
-#starters h1{
+.starters h1{
     font-size: 3rem;
     font-weight: 700;
 }
@@ -216,7 +219,7 @@ html{
   position: relative;
   width: 340px;
   height: 200px;
-  background-color: rgb(192, 145, 111);
+  background-color: rgb(238, 211, 138);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -289,25 +292,33 @@ html{
 }
 
 .food{
-   width:90%;
-   height: 90%;
+   width:100%;
+   height: 100%;
    object-fit: cover;
-   border-radius: 13px;
+   border-radius: 140px;
 }
 
 .king{
    display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction: column; 
-    padding-left: 30px;
+    text-align: center;
     object-fit: cover;
-    width: 85%;
-    height: 80%;
+    /* width: 85%; */
+    /* height: 80% */
+}
+
+.king img{
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid black;
 }
 
 .king h3{
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding-top: 1rem;
 }
 
@@ -765,3 +776,130 @@ html{
 
 
 /* sign in and sign up */
+
+
+
+
+/* menu button */
+
+/* original */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-left: 1rem;
+  
+}
+
+.dropdown button{
+  background-color: rgb(217, 97, 53);
+  color: white;
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: none !important;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(217, 97, 53);;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 2rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  /* text-decoration: none; */
+  color: rgb(255, 255, 255);
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(217, 97, 53); ;
+}
+
+
+
+/* contact us begins */
+
+.contactus{
+   font-size: 4.5rem;
+    color:var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+    letter-spacing: .3rem;
+    text-align: center;
+}
+
+
+.contact-us{
+  padding: 4rem;
+  background-color: #f4f2bd;
+}
+
+.contact-us .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* background-color: yellow; */
+}
+
+.contact-us .row .image{
+    flex: 1 1 45rem;
+}
+
+
+.contact-us .row .image{
+    width: 85%;
+    
+
+ }
+
+ .contact-us .row form{
+    flex: 1 1 45rem;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+ }
+
+form h3{
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size: 3rem;
+ }
+
+ form label{
+  font-size: 2rem;
+  padding-bottom: 2rem;
+ }
+
+ .contact-us .row form .box{
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+ }
+
+ .contact-us .row form .btn{
+    padding: 1rem 4rem;
+ }
+
+
+/* contact us ends */

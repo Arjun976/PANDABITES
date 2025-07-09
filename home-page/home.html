@@ -16,10 +16,19 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#aboutus">About Us</a>
-            <a href="#Help">Help</a>
-            <a href="#book">Book Order</a>
+            <a href="#offers">Offers</a>
+            <!-- <a href="#book">Book Order</a> -->
                  <!-- <a href="#Privacy">Privacy</a> -->
-     
+            <div class="dropdown">
+             <button>Menu</button>
+             <div class="dropdown-content">
+               <a href="#burger">Starters</a>
+               <a href="#drink">Drinks</a>
+               <a href="#mandi">Main Course</a>
+             </div>
+         </div>
+          
+            <a href="#">Contact Us</a>
              </nav>
      
              <!-- sign in and sign up button starts -->
@@ -205,10 +214,10 @@
   <!-- animation -->
   <div class="animation" style="padding-top: 50px; padding-right: 20px;">
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-<dotlottie-player src="https://lottie.host/6ab7f53c-f4ce-4e7d-9c98-d9b69e1aa436/tZxrefqKXA.lottie" background="transparent" speed="1" style="width: 400px; height: 400px" loop autoplay></dotlottie-player>
+<dotlottie-player src="https://lottie.host/6ab7f53c-f4ce-4e7d-9c98-d9b69e1aa436/tZxrefqKXA.lottie" background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay></dotlottie-player>
 
   </div>
-    <div class="offer">
+    <div class="offer" id="offers">
       <div class="container">
     <h2 style="font-size: x-large;">SPECIAL OFFERS</h2>
     <div class="offer-section">
@@ -261,7 +270,7 @@
 </div>
 <!-- end of search icon -->
        
-        <div id="starters">   
+        <div class="starters" id="burger">   
             <h1>STARTERS</h1>
         </div>
       <div class="row">
@@ -361,7 +370,7 @@
      
      <!-- <section class="product-view"> -->
        
-        <div id="starters">   
+        <div class="starters" id="drink">   
             <h1>DRINKS</h1>
         </div>
       <div class="row">
@@ -461,7 +470,7 @@
 
      
        
-        <div id="starters">   
+        <div class="starters" id="mandi">   
             <h1>MAIN COURSE</h1>
         </div>
       <div class="row">
@@ -581,6 +590,40 @@
     </div>
  </section>
 
+ <section class="contact-us" id="contactus">
+
+  <div class="contactus">
+     <h1>Contact Us</h1>
+  </div>
+     
+     <div class="row">
+   
+      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<dotlottie-player src="https://lottie.host/ccca33a7-3330-4e60-a9df-f09c971cc47c/UxZcAbUYDn.lottie" background="transparent" speed="1" style="width: 300px; height: 300px " loop autoplay></dotlottie-player>
+     
+      <form action="" method="post">
+
+        <label for="name">Full Name</label>
+        <input type="text" placeholder="Enter Your Name" class="box" required>
+
+        <label for="email">E-mail</label>
+        <input type="text" placeholder="Enter Your Name" class="box" required>
+
+        <label for="Phone">Phone number</label>
+        <input type="number" placeholder="Enter Your Name" class="box" required>
+
+        <label for="msg">Your message</label>
+        <input type="" placeholder="Enter Your Name" class="box" required>
+
+
+        
+      </form>
+    </div>
+  
+
+
+ </section>
+
  <footer class="footer">
     <div class="box-container">
         <div class="box">
@@ -631,7 +674,7 @@
 
 
     </div>
-
+  </div>
  </footer>
 
      
