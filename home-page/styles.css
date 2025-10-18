@@ -30,7 +30,7 @@ html{
 
 .header{
     padding: 2rem ;
-    position: fixed;
+    position: sticky;
     top: 0; left: 0; right: 0;
     z-index: 1000;
     box-shadow: 0 .5rem 5rem rgba(237, 98, 12, 0.5);
@@ -44,51 +44,100 @@ html{
     overflow-x: none;
 }
 
-.header .logo img{
+.logo img{
     width: 7rem;
     height: 7rem;
-    
-}
-
-.header .logo{
-    font-size: 4rem;
+    vertical-align: middle;
     
 }
 
 .header .logo i{
-    position: absolute;
+    font-size: 3rem;
     margin-right: 3rem;
-    margin-top: 1.5rem;
-    display: inline;
-    align-items: center;
-    justify-content: center;
+    vertical-align: middle;
     color: white;
 }
 
-.header .navbar{
-    position: relative;
-    margin-right: 3rem;
-    /* display: flex;
-    align-items: center;
-    justify-content: end; */
-    transform: scale(1);
-    opacity: 1;
-    transition: -2 ease-out;
-    
+.navbar {
+    display: flex;
+    gap: 1.5rem;
 }
 
-.header .navbar a{
+.navbar a, .dropdown button {
+    text-decoration: none;
     font-weight: 600;
     font-size: 1.7rem;
     color: white;
-    /* color: var(--light-color ); */
-    margin-left:2rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .dropdown button:hover {
+    color: #030100;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.sign {
+    display: flex;
+    gap: 1rem;
+}
+
+.signup{
+  display: flex;
+  gap: 1rem;
+}
+
+
+.sparkle-button {
+    position: relative;
+    border: none;
+    background: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    /* color: #000; */
+    overflow: hidden;
+}
+
+.sparkle-button .text {
+    position: relative;
+    z-index: 1;
 }
 
 #menu-btn{
+    display: none;
     font-size: 2.5rem;
     border-radius: .5rem;
     color: black;
+    cursor: pointer;
 }
 
 .home{
@@ -322,13 +371,7 @@ html{
     padding-top: 1rem;
 }
 
-.about-us{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    /* gap: 1.5rem; */
-    /* padding-top: 10rem; */
-}
+
 
 .about h1{
     font-size: 4.5rem;
@@ -344,6 +387,15 @@ html{
 
 .about{
     padding-top: 10rem; 
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* gap: 1.5rem; */
+    /* padding-top: 10rem; */
 }
 
 .about-us img{
@@ -364,7 +416,7 @@ html{
 
 .about-us .content{
     flex: 1 1 45rem;
-    padding-right: 8rem;
+    padding-right: 2rem;
 }
 
 .about-us .content span{
@@ -903,3 +955,89 @@ form h3{
 
 
 /* contact us ends */
+
+
+/* responsive code */
+
+/* Base styles for header */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a, .dropdown button {
+        padding: 0.75rem;
+        font-size: 1.1rem;
+    }
+
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .sign {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+    }
+
+    .sparkle-button {
+        margin-right: 2px;
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+}
+
+/* Animation for hamburger menu toggle */
+#menu-btn {
+    transition: transform 0.3s;
+}
+
+#menu-btn.active {
+    transform: rotate(90deg);
+}
+
+/* responsive code end */

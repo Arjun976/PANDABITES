@@ -28,7 +28,7 @@
              </div>
          </div>
           
-            <a href="#">Contact Us</a>
+            <a href="#contactus">Contact Us</a>
              </nav>
      
              <!-- sign in and sign up button starts -->
@@ -38,7 +38,7 @@
                <!-- From Uiverse.io by JkHuger --> 
      <div class="sp" id="sign-in">
      
-      <a href="../LOGIN/BITES.html" target="_blank" style="text-decoration: none;">
+      <a href="../LOGIN/BITES.html" target="_parent" style="text-decoration: none;">
        <button class="sparkle-button">
          <span class="spark"></span>
          
@@ -115,7 +115,7 @@
 
         <div class="signup">
            <div class="sp">
-     <a href="../Sign-up/Sign-up.html" target="_blank" style="text-decoration: none;">
+     <a href="../Sign-up/Sign-up.html" target="_parent" style="text-decoration: none;">
        <button class="sparkle-button">
          <span class="spark"></span>
          
@@ -592,7 +592,7 @@
 
  <section class="contact-us" id="contactus">
 
-  <div class="contactus">
+  <div id="contactus" class="contactus">
      <h1>Contact Us</h1>
   </div>
      
@@ -677,6 +677,13 @@
   </div>
  </footer>
 
+
+ <script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.navbar').classList.toggle('active');
+    });
+</script>
      
 </body>
 </html>
