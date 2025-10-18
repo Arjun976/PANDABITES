@@ -3,7 +3,7 @@
     margin: 0; padding: 0;
     box-sizing: border-box;
     outline: none; border: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: all .2s ease-out;
     text-decoration: none;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 .header{
-    padding: 2rem ;
+    padding: .5rem ;
     position: fixed;
     top: 0; left: 0; right: 0; 
     z-index: 1000;

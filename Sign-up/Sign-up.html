@@ -102,16 +102,31 @@
             <div class="heading">
                 <h1>Sign Up</h1>
             </div>
-            <div class="middle">
-                <label for="ph-no">Phone Number</label>
-                <input type="text" id="phone-no" class="text-field">
+            <form class="middle">
+                
                 <label for="Name">Name</label>
                 <input type="text" class="text-field" id="name">
+                <label for="ph-no">Phone Number</label>
+                <input type="text" id="phone-no" class="text-field">
                 <label for="email">Email</label>
                 <input type="text" class="text-field" id="email">
+                <label for="password">Password</label>
+                <input type="password" class="text-field" id="password">
                 <button type="button"  class="sign-btn">Sign Up</button>
-            </div>
+            </form>
         </div>
     </div>
 </body>
+
+<script>
+  const loginForm = document.querySelector('.sign-btn')
+  const formData = document.querySelector('.middle')
+    
+      loginForm.addEventListener('click',(event)  => {
+        event.preventDefault();
+        alert("Thank you for registering")
+        formData.reset();
+        
+      });
+</script>
 </html>
